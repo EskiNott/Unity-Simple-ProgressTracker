@@ -39,8 +39,10 @@ public class Example : MonoBehaviour
     private void Start()
     {
         List<int> itemList = new List<int>() { 1, 2, 3, 4, 5 };
-        Func<int, bool> requirements = (item) => item % 2 == 0; // Example requirement: Even numbers
-        Action<int> actions = (item) => Debug.Log("Item " + item + " processed."); // Example action: Log item processed
+        // Example requirement: Even numbers
+        Func<int, bool> requirements = (item) => item % 2 == 0; 
+        // Example action: Log item processed
+        Action<int> actions = (item) => Debug.Log("Item " + item + " processed."); 
 
         progressTracker = new ProgressTracker<int>(itemList, requirements, actions);
     }
