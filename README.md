@@ -1,4 +1,3 @@
-```markdown
 # Unity Simple ProgressTracker
 
 ## Overview
